@@ -12,6 +12,9 @@ export default {
         path: '/',
         publicPath: '/'
     },
+    devServer: {
+        historyApiFallback: true,
+      },
     plugins: [
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),

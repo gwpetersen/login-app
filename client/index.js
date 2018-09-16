@@ -7,6 +7,13 @@ import App from './components/App';
 
 
 
-render(<Router routes = {routes} />, document.getElementById('app'));
+// render(<Router routes = {routes} />, document.getElementById('app'));
 
-render(<App/>, document.getElementById('app'));
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>
+    , document.getElementById('app')
+  );
+
+// render(<App/>, document.getElementById('app'));
